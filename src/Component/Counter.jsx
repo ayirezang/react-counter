@@ -11,8 +11,8 @@ const Counter = () => {
   };
   return (
     <div className="h-screen flex  flex-col justify-center items-center gap-10 ">
-      <p className="">{count}</p>
-      <div className="flex gap-5">
+      <p className="text-5xl">{count}</p>
+      <div className="flex gap-1">
         <button className="btn btn-success" onClick={handleIncrease}>
           Increase
         </button>
