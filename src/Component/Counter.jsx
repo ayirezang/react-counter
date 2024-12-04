@@ -9,6 +9,10 @@ const Counter = () => {
   const handleDecrease = () => {
     setCount(count - 1);
   };
+  const handleReset = () => {
+    setCount(0);
+  };
+
   return (
     <div className="h-screen flex  flex-col justify-center items-center gap-10 ">
       <p className="text-5xl">{count}</p>
@@ -18,6 +22,9 @@ const Counter = () => {
         </button>
         <button className="btn btn-warning" onClick={handleDecrease}>
           Decrease
+        </button>
+        <button className="btn btn-neutral" onClick={handleReset}>
+          Reset
         </button>
       </div>
     </div>
